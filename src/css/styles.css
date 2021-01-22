@@ -54,3 +54,40 @@ a {
   .header nav ul li a:hover,.active {
   background: #444;
 }
+
+.header nav ul li a {
+    color: white;
+    padding: 20px;
+    display: block;
+  }
+  
+  .header nav ul li a:hover,
+  .active {
+    background: #444;
+  }
+  
+  /* value proposition */
+  .vp {
+    height: 700px;
+    background-image: url(/src/images/cafe1.jpg)
+      center center;
+    background-size: cover;
+    text-align: center;
+  }
+
+.vp-content {
+    max-width: 600px;
+    padding-top: 150px;
+    color: white;
+    margin: auto;
+  }
+  
+  .vp-content h1 {
+    font-size: 50px;
+  }
+  
+  .vp-content p {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.9em;
+  }
