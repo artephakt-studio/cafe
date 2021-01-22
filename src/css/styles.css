@@ -22,7 +22,7 @@ a {
 /* Header */
 .header {
     background: black;
-    overflow: auto; /*Si le dépassement est tronqué, une barre de défilement doit être ajoutée pour voir le reste du contenu*/
+    overflow: auto; 
     line-height: 1.7em;
   }
 
