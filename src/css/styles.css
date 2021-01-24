@@ -1,93 +1,89 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+body{
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "header header header header"
+  "hero hero hero hero"
+  "feature feature feature feature"
+  "reservation reservation reservation reservation"
+  "footer footer footer footer";
 }
 
-html,body{
-    font-family:"Open Sans",sans-serif;
+header {
+  grid-area: header;
+  background-color: #303030;
 }
 
-h1,
-h2,
-h3 {
-    margin-bottom:20px;
+h1 > a {
+  color:#fff;
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+nav {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none; 
+  margin: 2rem;
 }
 
-a {
-    color:#222;
-    text-decoration: none;
+nav ul li a{
+  color:#fff;
+  text-decoration: none;
+  display:inline-block;
+  margin: 0 0.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.2rem;
 }
 
-/* Header */
-.header {
-    background: black;
-    overflow: auto; 
-    line-height: 1.7em;
-  }
-
-  .header nav h1 {
-    float: left;
-    padding: 20px;
-    margin-bottom: 0;
-  }
-
-  .header nav h1 a {
-    color: white;
-  }
-
-  .header nav ul {
-    float: right;
-    list-style: none;
-  }
-
-  .header nav ul li {
-    float: left;
-  }
-
-  .header nav ul li a {
-    color: white;
-    padding: 20px;
-    display: block;
-  }
-
-  .header nav ul li a:hover,.active {
-  background: #444;
+footer {
+  grid-area: footer;
+  background-color: #1c1c1c;
 }
 
-.header nav ul li a {
-    color: white;
-    padding: 20px;
-    display: block;
-  }
-  
-  .header nav ul li a:hover,
-  .active {
-    background: #444;
-  }
-  
-  /* value proposition */
-  .vp {
-    height: 700px;
-    background-image: url(./src/images/cafe1.jpg)
-      center center;
-    background-size: cover;
-    text-align: center;
-  }
+.reservation {
+  grid-area: reservation;
+  background-color: palegreen;
+}
+.hero{
+  grid-area: hero;
+  color:#fff;
+  background-image: url(../images/cafe1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
 
-.vp-content {
-    max-width: 600px;
-    padding-top: 150px;
-    color: white;
-    margin: auto;
-  }
-  
-  .vp-content h1 {
-    font-size: 50px;
-  }
-  
-  .vp-content p {
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 1.9em;
-  }
+.hero-content{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.features{
+  grid-area: feature;
+  background-color: rosybrown;
+  display:grid;
+  grid-template-areas: "feature-1 feature-1 feature-2 feature-2";
+}
+
+.feature-1 {
+  grid-area: feature-1;
+  background-color: salmon;
+}
+
+.feature-2{
+  grid-area: feature-2;
+  background-color: slateblue;
+}
