@@ -1,7 +1,33 @@
 
-.border-box{
-  box-sizing:border-box;
+/*template*/
+
+.template-index{
+  grid-template-areas:
+  "header       header       header       header"
+  "hero         hero         hero         hero"
+  "feature      feature      feature      feature"
+  "illustration illustration illustration illustration"
+  "reservation  reservation  reservation  reservation"
+  "footer       footer       footer       footer";
 }
+
+.template-where{
+  grid-template-areas: 
+  "header header header header"
+  "where  where  where  where"
+  "footer footer footer footer";
+}
+
+.template-contact{
+  grid-template-areas:
+  "header header header header"
+  "form   form   form   form"
+  "footer footer footer footer";
+}
+
+/*template - end*/
+
+/*container*/
 
 .grid-container{
   display:grid;
@@ -10,6 +36,207 @@
 .flex-container{
   display:flex;
 }
+
+/*end-container*/
+
+/*margin-left*/
+
+.ml1{
+  margin: 0 0 0 1rem;
+}
+
+.ml2{
+  margin: 0 0 0 2rem;
+}
+
+.ml3{
+  margin: 0 0 0 3rem;
+}
+
+.ml4{
+  margin: 0 0 0 4rem;
+}
+
+.ml5{
+  margin: 0 0 0 5rem;
+}
+
+.ml6{
+  margin: 0 0 0 6rem;
+}
+
+.ml7{
+  margin: 0 0 0 7rem;
+}
+
+.ml8{
+  margin: 0 0 0 8rem;
+}
+
+.ml9{
+  margin: 0 0 0 9rem;
+}
+
+.ml10{
+  margin: 0 0 0 10rem;
+}
+.ml11{
+  margin: 0 0 0 11rem;
+}
+.ml12{
+  margin: 0 0 0 12rem;
+}
+
+.ml13{
+  margin: 0 0 0 13rem;
+}
+
+.ml14{
+  margin: 0 0 0 14rem;
+}
+
+.ml15{
+  margin: 0 0 0 15rem;
+}
+
+.ml16{
+  margin: 0 0 0 16rem;
+}
+
+.ml17{
+  margin: 0 0 0 17rem;
+}
+
+.ml18{
+  margin: 0 0 0 18rem;
+}
+
+.ml19{
+  margin:0 0 0 19rem;
+}
+
+.ml20{
+  margin: 0 0 0 20rem;
+}
+
+/*end-margin left*/
+
+/*margin left right*/
+.mlr1{
+  margin: 0 1rem 0 1rem;
+}
+
+.mlr2{
+  margin: 0 2rem 0 2rem;
+}
+
+.mlr3{
+  margin: 0 3rem 0 3rem;
+}
+
+.mlr4{
+  margin: 0  4rem 0 4rem;
+}
+
+.mlr5{
+  margin: 0 5rem 0 5rem;
+}
+
+.mlr6{
+  margin: 0 6rem 0 6rem;
+}
+
+.mlr7{
+  margin: 0 7rem 0 7rem;
+}
+
+.mlr8{
+  margin: 0 8rem 0 8rem;
+}
+
+.mlr9{
+  margin: 0 9rem 0 9rem;
+}
+
+.mlr10{
+  margin: 0 10rem 0 10rem;
+}
+.mlr11{
+  margin: 0 11rem 0 11rem;
+}
+.mlr12{
+  margin: 0 12rem 0 12rem;
+}
+
+.mlr13{
+  margin: 0 13rem 0 13rem;
+}
+
+.mlr14{
+  margin: 0 14rem 0 14rem;
+}
+
+.mlr15{
+  margin: 0 15rem 0 15rem;
+}
+
+.mlr16{
+  margin: 0 16rem 0 16rem;
+}
+
+.mlr17{
+  margin: 0 17rem 0 17rem;
+}
+
+.mlr18{
+  margin: 0 18rem 0 18rem;
+}
+
+.mlr19{
+  margin:0 19rem 0 19rem;
+}
+
+.mlr20{
+  margin: 0 20rem 0 20rem;
+}
+/*end-margin left right*/
+
+/*margin-lr*/
+.mlr1{
+  margin: 0 20rem 0 20rem;
+}
+/*end-margin-lr*/
+
+/*margin top*/
+.mt1{
+  margin: 1rem 0 0 0
+}
+
+.mt2{
+  margin: 2rem 0 0 0
+}
+
+.mt3{
+  margin: 3rem 0 0 0
+}
+/*end-margin top*/
+
+.mt2-mlr20{
+  margin:2rem 20rem 0 20rem
+}
+
+
+
+.column-center{
+  flex-direction: column;
+}
+
+
+.border-box{
+  box-sizing:border-box;
+}
+
+
 
 .text-center{
   text-align: center;
@@ -48,15 +275,12 @@
 .white{
   color:#fff;
 }
+
+
+
+
 .container {
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-  "header header header header"
-  "hero hero hero hero"
-  "feature feature feature feature"
-  "illustration illustration illustration illustration"
-  "reservation reservation reservation reservation"
-  "footer footer footer footer";
 }
 
 header {
@@ -120,7 +344,6 @@ footer {
 
 .features{
   grid-area: feature;
-  background-color: rosybrown;
   display:grid;
   grid-template-areas: "feature-1 feature-1 feature-2 feature-2";
 }
@@ -193,4 +416,23 @@ footer {
   background-position: center;
   grid-area: illustration;
   min-height: 60vh;
+}
+
+.where{
+  grid-area: where;
+  display: grid;
+  grid-template-areas: "map map adress adress";
+
+}
+
+.map{
+  grid-area:map;
+}
+
+.adress{
+  grid-area:adress;
+}
+
+.form{
+  grid-area:form;
 }
