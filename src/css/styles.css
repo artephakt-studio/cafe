@@ -1,13 +1,60 @@
-body{
-  box-sizing: border-box;
+
+.border-box{
+  box-sizing:border-box;
+}
+
+.grid-container{
+  display:grid;
+}
+
+.flex-container{
+  display:flex;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.title{
+  font-size:4rem;
+}
+.font{
+ font-family: 'Overpass', sans-serif; ;
+}
+
+.text-background{
+  background-color: rgba(0,0,0,0.2);
+}
+
+.separator{
+  height:8px;
+  width:6%;
+  background-color:#303030;
+}
+
+.fs-1{
+  font-size: 1rem;
+}
+
+.fs-1_5{
+  
+  font-size: 1.5rem;
+}
+
+.fs-2{
+  font-size: 2rem;
+}
+
+.white{
+  color:#fff;
 }
 .container {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
   "header header header header"
   "hero hero hero hero"
   "feature feature feature feature"
+  "illustration illustration illustration illustration"
   "reservation reservation reservation reservation"
   "footer footer footer footer";
 }
@@ -53,7 +100,7 @@ footer {
 
 .reservation {
   grid-area: reservation;
-  background-color: palegreen;
+  background-color:#fff;
 }
 .hero{
   grid-area: hero;
@@ -80,10 +127,70 @@ footer {
 
 .feature-1 {
   grid-area: feature-1;
-  background-color: salmon;
+  background-color:#fff;
 }
 
 .feature-2{
   grid-area: feature-2;
-  background-color: slateblue;
+  background-color: #fff;
+}
+.m1{
+  margin:1rem;
+}
+.m4-2{
+  margin:10rem 4rem 2rem 4rem;
+}
+.m4{
+  margin:4rem;
+}
+.m8{
+  margin:8rem;
+}
+
+.m10{
+  margin:10rem;
+}
+.p1{
+  padding:1rem;
+}
+
+.p1-5_1{
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.p2{
+  padding:2rem;
+}
+
+.p_inf{
+  padding:0 0 1rem 0;
+}
+  
+.radius{
+  border-radius: 2rem;
+}
+.bold{
+  font-weight: 700;
+}
+.button{
+  background-color:ghostwhite;
+  text-decoration: none;
+  color:black;
+  border-radius: 20px;
+}
+
+.button-black{
+  background-color: #303030;
+  text-decoration: none;
+  color:#fff;
+  border-radius: 20px;
+}
+
+.illustration{
+  background-image: url(../images/cafe3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: illustration;
+  min-height: 60vh;
 }
